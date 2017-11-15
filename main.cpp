@@ -111,9 +111,9 @@ vector < vector < Pixel > > PixelAVG( vector <Bitmap> pics)
         {
             for (int col = 0; col < CompImg[0].size(); col++)
             {
-            CompImg[row][col].red = CompImg[row][col].red / pictures.size();
-            CompImg[row][col].green = CompImg[row][col].green / pictures.size();
-            CompImg[row][col].blue /= pictures.size();
+            CompImg[row][col].red = CompImg[row][col].red / pics.size();
+            CompImg[row][col].green = CompImg[row][col].green / pics.size();
+            CompImg[row][col].blue = CompImg[row][col].blue / pics.size();
             }
         }
         return CompImg;
